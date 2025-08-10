@@ -1,18 +1,20 @@
-def mostrar_tablero(unidades, terreno):
+def mostrar_tablero():
+    filas = 15
+    columnas = 15
+
+    # Ejemplo: lista de celdas impasables (terreno)
+    impasables = ["0-0", "0-1", "1-0", "7-7", "14-14"]
+
     print("Tablero 15x15:")
-    for fila in range(15):
+    for fila in range(filas):
         linea = ""
-        for col in range(15):
-            celda_str = f"{fila}-{col}"
-            ocupado = False
-            for id, u in unidades.items():
-                if u["posicion"] == [fila, col]:
-                    linea += id[0].upper() + "  "
-                    ocupado = True
-                    break
-            if not ocupado:
-                if celda_str in terreno.get("impasables", []):
-                    linea += "#  "
-                else:
-                    linea += ".  "
+        for col in range(columnas):
+            celda_id = f"{fila}-{col}"
+            if celda_id in impasables:
+                linea += "#  "
+            else:
+                linea += ".  "
         print(linea)
+
+if __name__ == "__main__":
+    mostrar_tablero()
