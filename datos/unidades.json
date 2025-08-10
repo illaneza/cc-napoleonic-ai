@@ -1,0 +1,5 @@
+{
+  "U1": {"tipo": "infanteria", "posicion": [7,7], "estado": "completo", "sector": "Centro"},
+  "U2": {"tipo": "caballeria", "posicion": [6,7], "estado": "debilitado", "sector": "Centro"},
+  "U3": {"tipo": "artilleria", "posicion": [14,14], "estado": "completo", "sector": "Derecho"}
+}
