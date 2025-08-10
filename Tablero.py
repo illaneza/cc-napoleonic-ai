@@ -18,3 +18,4 @@ def mostrar_tablero():
 
 if __name__ == "__main__":
     mostrar_tablero()
+    input("\nPulsa Enter para salir...")
